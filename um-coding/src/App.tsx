@@ -1,24 +1,45 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
 
-function App() {
+import { SetStateAction, useState } from 'react';
+// import logo from './logo.svg';
+import './App.css';
+import printJobs from './print_jobs_response.json'
+
+const App = () => {
+  const data = printJobs.data
+  const [searchInput, setSearchInput] = useState('');
+  const [filteredResults, setFilteredResults] = useState([{ printer_name: '', status: '', owner: '', created_at: '' }]);
+
+  const searchItems = (searchValue: SetStateAction<string>) => {
+    setSearchInput(searchValue)
+    if (searchInput !== '') {
+      const filteredData = data.filter((item) => Object.values(item).join('').toLowerCase().includes(searchInput.toLowerCase()))
+      setFilteredResults(filteredData)
+    }
+    else {
+      setFilteredResults(data)
+    }
+  }
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+      <input type="text" placeholder='Search...' onChange={(e) => searchItems(e.target.value)} />
+      {searchInput.length > 1 ?
+        filteredResults.map((job, i) => <div key={i}>
+          <h2>{job.printer_name}</h2>
+          <strong><p>{job.status}</p></strong>
+          <p>{job.owner}</p>
+          <p>{job.created_at}</p>
+        </div>)
+        :
+        data.map((job, i) => <div key={i}>
+          <h2>{job.printer_name}</h2>
+          <strong><p>{job.status}</p></strong>
+          <p>{job.owner}</p>
+          <p>{job.created_at}</p>
+        </div>
+        )
+      }
     </div>
   );
 }

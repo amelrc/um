@@ -1,0 +1,182 @@
+{
+  "data": [
+    {
+      "build_plate": {
+        "type": "glass"
+      },
+      "cloud_job_id": "xxxYO5Y1TQXd0g1jQeAhcMls7BjAhB6gHq1ERkXJj5rxxx",
+      "cluster_id": "xxxgu8dyIdnBM1uItLAvOUSl-wPLO3WGT49l9ZrK7xxx",
+      "compatible_machine_families": ["Ultimaker 3"],
+      "configuration": [
+        {
+          "estimated_material_volume": 2407,
+          "extruder_index": 0,
+          "material": {
+            "brand": "Generic",
+            "color": "Generic",
+            "guid": "xxxc9f0d-e3aa-4bd4-b2d2-23e2425b1xxx",
+            "material": "PLA"
+          },
+          "print_core_id": "AA 0.4"
+        }
+      ],
+      "configuration_changes_required": [],
+      "constraints": {},
+      "created_at": "2021-09-21T18:31:56.733Z",
+      "force": false,
+      "impediments_to_printing": [],
+      "last_seen": 3.2872886369004846,
+      "machine_variant": "Ultimaker 3",
+      "name": "UM3_local_1",
+      "network_error_count": 0,
+      "owner": "Developer 1",
+      "preview_url": "",
+      "printer_name": "CS-UM3-staging-2",
+      "printer_uuid": "xxx1e5e9-a69a-4853-bbf5-2ab548f3exxx",
+      "sent_from": "cloud",
+      "started": true,
+      "status": "wait_cleanup",
+      "time_elapsed": 2866,
+      "time_total": 2862,
+      "uuid": "xxx43f27-95b5-4221-a0f2-bd3f5e242xxx"
+    },
+    {
+      "build_plate": {
+        "type": "glass"
+      },
+      "cluster_id": "xxxG6hrNr44eCm0RaccyDiQjLBaZmol0SRLoJc5wLxxx",
+      "compatible_machine_families": ["Ultimaker 3"],
+      "configuration": [
+        {
+          "estimated_material_volume": 6521,
+          "extruder_index": 0,
+          "material": {
+            "brand": "Generic",
+            "color": "Generic",
+            "guid": "xxxc9f0d-e3aa-4bd4-b2d2-23e2425b1xxx",
+            "material": "PLA"
+          },
+          "print_core_id": "AA 0.4"
+        },
+        {
+          "estimated_material_volume": 9473,
+          "extruder_index": 1,
+          "material": {
+            "brand": "Ultimaker",
+            "color": "Blue",
+            "guid": "xxx029e6-e31b-4c9e-a12f-9282e29a9xxx",
+            "material": "PLA"
+          },
+          "print_core_id": "AA 0.4"
+        }
+      ],
+      "configuration_changes_required": [],
+      "constraints": {},
+      "created_at": "2021-09-01T12:59:23.728Z",
+      "force": false,
+      "impediments_to_printing": [],
+      "last_seen": 4.885229241102934,
+      "machine_variant": "Ultimaker 3",
+      "name": "UM3_local_2",
+      "network_error_count": 0,
+      "owner": "Developer 2",
+      "printer_name": "um3testing",
+      "printer_uuid": "9e6d1494-ca62-4a26-a8ad-3f47aa4524b7",
+      "sent_from": "network",
+      "started": true,
+      "status": "wait_cleanup",
+      "time_elapsed": 19802,
+      "time_total": 19800,
+      "uuid": "xxxa2e9e-f421-4060-a2d9-2852df389xxx"
+    },
+    {
+      "build_plate": {
+        "type": "glass"
+      },
+      "cluster_id": "xxxlV0gAbtOvVs66osvinAfdgndFiFy0i58HCHxx9xxx",
+      "compatible_machine_families": ["Ultimaker S5"],
+      "configuration": [
+        {
+          "estimated_material_volume": 301,
+          "extruder_index": 0,
+          "material": {
+            "brand": "Ultimaker",
+            "color": "White",
+            "guid": "xxx86b05-a620-4a87-92d0-f02becc1fxxx",
+            "material": "PC"
+          },
+          "print_core_id": "AA 0.4"
+        },
+        {
+          "estimated_material_volume": 812,
+          "extruder_index": 1,
+          "material": {
+            "brand": "Generic",
+            "color": "Generic",
+            "guid": "xxxc9f0d-e3aa-4bd4-b2d2-23e2425b1xxx",
+            "material": "PLA"
+          },
+          "print_core_id": "BB 0.4"
+        }
+      ],
+      "configuration_changes_required": [],
+      "constraints": {},
+      "created_at": "2021-09-15T14:20:28.736Z",
+      "force": false,
+      "impediments_to_printing": [],
+      "last_seen": 5.826098578050733,
+      "machine_variant": "Ultimaker S5",
+      "name": "UMS5_local_1",
+      "network_error_count": 0,
+      "owner": "Developer 3",
+      "preview_url": "",
+      "printer_name": "CS-Utrecht-UMS5",
+      "printer_uuid": "xxxb99cf-ce8b-4ec1-8748-c3e640622xxx",
+      "sent_from": "cloud",
+      "started": false,
+      "status": "finished",
+      "time_elapsed": 1226,
+      "time_total": 1224,
+      "uuid": "xxx1ea12-7090-41d2-8247-65190ce9axxx"
+    },
+    {
+      "build_plate": {
+        "type": "glass"
+      },
+      "cluster_id": "xxx3xBZRzPqsaV-DO8jcZ3tB9xgEna1W-b9kBaaiQxxx",
+      "compatible_machine_families": ["Ultimaker 3"],
+      "configuration": [
+        {
+          "estimated_material_volume": 2407,
+          "extruder_index": 0,
+          "material": {
+            "brand": "Generic",
+            "color": "Generic",
+            "guid": "xxxc9f0d-e3aa-4bd4-b2d2-23e2425b1xxx",
+            "material": "PLA"
+          },
+          "print_core_id": "AA 0.4"
+        }
+      ],
+      "configuration_changes_required": [],
+      "constraints": {},
+      "created_at": "2021-09-23T07:34:02.988Z",
+      "force": false,
+      "impediments_to_printing": [],
+      "last_seen": 4.5322845699993195,
+      "machine_variant": "Ultimaker 3",
+      "name": "UMS5_local_5",
+      "network_error_count": 0,
+      "owner": "Developer 6",
+      "preview_url": "",
+      "printer_name": "TheBestUM3",
+      "printer_uuid": "xxxxfdcd-ccc3-4912-9b5b-12e34184xxx",
+      "sent_from": "cloud",
+      "started": false,
+      "status": "queued",
+      "time_elapsed": 153,
+      "time_total": 2880,
+      "uuid": "xxxa8ba2-1922-49ba-9ffb-3733eb415xxx"
+    }
+  ]
+}
