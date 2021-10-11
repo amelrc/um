@@ -1,8 +1,22 @@
-
 import { SetStateAction, useState } from 'react';
-// import logo from './logo.svg';
 import './App.css';
-import printJobs from './print_jobs_response.json'
+import printJobs from './print_jobs_response.json';
+import styled from 'styled-components'
+
+const CardsWrap = styled.section`
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+`
+const Card = styled.div`
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+margin: 16px;
+padding: 16px;
+border: 1px solid gray;
+width: 260px;
+`
 
 const App = () => {
   const data = printJobs.data
@@ -22,24 +36,26 @@ const App = () => {
 
   return (
     <div className="App">
-
-      <input type="text" placeholder='Search...' onChange={(e) => searchItems(e.target.value)} />
-      {searchInput.length > 1 ?
-        filteredResults.map((job, i) => <div key={i}>
-          <h2>{job.printer_name}</h2>
-          <strong><p>{job.status}</p></strong>
-          <p>{job.owner}</p>
-          <p>{job.created_at}</p>
-        </div>)
-        :
-        data.map((job, i) => <div key={i}>
-          <h2>{job.printer_name}</h2>
-          <strong><p>{job.status}</p></strong>
-          <p>{job.owner}</p>
-          <p>{job.created_at}</p>
-        </div>
-        )
-      }
+      <h1>Available Print Jobs</h1>
+      <input type="text" placeholder='Search...' value={searchInput} onChange={(e) => searchItems(e.target.value)} />
+      <CardsWrap data-testid='section'>
+        {searchInput.length > 1 ?
+          filteredResults.map((job, i) => <Card key={i}>
+            <h2>{job.printer_name}</h2>
+            <p>status: <strong>{job.status}</strong></p>
+            <p>owned by: <strong>{job.owner}</strong></p>
+            <p>{job.created_at}</p>
+          </Card>)
+          :
+          data.map((job, i) => <Card key={i}>
+            <h2>{job.printer_name}</h2>
+            <p>status: <strong>{job.status}</strong></p>
+            <p> owned by: <strong>{job.owner}</strong></p>
+            <p>{job.created_at}</p>
+          </Card>
+          )
+        }
+      </CardsWrap>
     </div>
   );
 }
